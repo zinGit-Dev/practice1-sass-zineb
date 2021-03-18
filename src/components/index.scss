@@ -1,0 +1,65 @@
+@import '../styles/common.scss';
+
+.button{
+    width: 120px;
+    height: 30px;
+    @include commons;
+    
+&__text {
+    width: 80px;
+    height: 25px;
+  }
+&--home{
+    background-color:#DE8416;
+}
+&--about{
+    background-color: #96A951;
+}
+&--doc{
+    background-color: #B6D833;
+}
+&--hover {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+.header{
+    @extend .flex-global;
+    //justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #DDD8CC;
+    width: 100%;
+    height: 90px;
+}
+.footer{
+    @extend .flex-global;
+    background-color: #DDD8CC;
+    width: 100%;
+    height: 50px;
+    //font-size: x-large;
+    border: 2px solid red;
+}
+img{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+}
+.dashboard{
+    @extend .flex-global;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 2px solid red;
+    width: 900px;
+    height: 400px;
+    margin: 15px;
+    padding: 10px;
+    //row-gap: 15px;
+}
+.key-board{
+    width: 270px;
+    height: 150px;
+    border: 1px solid #8E9FA7;
+}

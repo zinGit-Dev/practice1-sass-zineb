@@ -1,0 +1,9 @@
+@import './styles/common.scss';
+@import './components/index.scss';
+
+.app {
+ @include footer-global;
+  justify-content: space-between;
+}
+
+
